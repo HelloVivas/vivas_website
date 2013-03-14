@@ -1,0 +1,232 @@
+body {
+  width: 100%;
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+img { border: 0px; }
+
+
+/* header */
+.header {
+  height: 75px;
+  margin-left: 20%;
+  margin-right: 22%;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: 0px solid black;
+}
+.header img { height: 100%; float:left; }
+.header .nav {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  height: 100%;
+  border: 0px solid #000;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+}
+.nav ul { margin-top: 20%; }
+.nav li { display: inline; padding-left: 25px; border: 0px solid #000;}
+.nav a {
+  text-decoration: none;
+  color: gray;
+}
+.nav a:hover, .nav a.active { color: #b0a273; }
+
+@media screen and (max-width:700px) {
+  .header {
+    height: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header .nav {
+    font-size: 13px;
+  }
+  .nav ul { margin-top: 20px; }
+  .nav li { padding-left: 10px; }
+}
+/* /header */
+
+
+.bg-black {
+  background-color: #000;
+  border: 1px solid #000;
+}
+.bg-white { background-color: #fff; border: 1px solid #fff; }
+.bg-gray { background-color: #f0f0f0; border: 1px solid #f0f0f0; }
+
+/* section */
+.section {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.section .wording, .section .figure, .section .members { position: absolute; }
+.section .figure { z-index: 100; }
+.section .wording { z-index: 200; }
+.section .figure img, .wording li img { max-width: 100%; max-height: 100%; }
+.section1 { border-top: 50px solid #000; }
+.wording h3 {
+  text-align: center;
+  color: #94875d;
+  font-weight: lighter;
+  font-size: 33px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.wording p { color: #888; }
+.bg-black .wording p { color: #acacac; }
+.section2 .wording p { font-size: 18px; }
+.wording ul {
+  width: 100%; height: 100%;
+  padding:0px; margin-top:0px;
+  background-color: #fff;
+  list-style-type: none;
+}
+.wording li { height: 60px; }
+.wording li .thumb {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+.wording li p {
+  display: inline-block;
+  vertical-align: middle;
+  width: 73%;
+  margin-left: 2%;
+  padding: 2px 0 2px 2%;
+  border-left: 3px solid #bcbcbc;
+  word-wrap: break-word;
+}
+.wording li a {
+  text-decoration: none;
+  border-bottom: 1px dotted #888;
+  color: #888;
+}
+
+@media screen and (min-width:701px){
+  .section {
+    height: 420px;
+    max-width: 1200px;
+  }
+  .section2 { height: 150px; }
+  .section6 { height: 450px; }
+  .section .wording, .section .figure { width: 50%; height: 100%; }
+  .section2 .figure, .section6 .figure { width: 100% }
+  .section6 .wording { width: 66% }
+  .section1 .wording, .section3 .wording, .section5 .wording:first-of-type, .section6 .wording { left: 15%;}
+  .section1 .figure, .section3 .figure, .section6 .figure { left: 50%;}
+  .section2 .wording, .section4 .wording, .section5 .wording:nth-of-type(2) { left: 55%; }
+  .section2 .figure { left: 7%; }
+  .section5 .members { left: 15%; bottom: 0%; }
+  .section .wording { padding-top: 40px; }
+  .section1 .wording h3 { width: 100%; text-align: left; margin-bottom: 0px; }
+  .section1 .wording p { width: 60%; padding-left: 5px; margin-top:0px; }
+  .section3 .wording h3 { width: 65%; }
+  .section3 .wording p { width: 60%; }
+  .section2 .wording h3, .section4 .wording h3, .section5 .wording h3 { width: 62%; }
+  .section2 .wording p, .section4 .wording p, .section5 .wording p { width: 60%; }
+  .section5 .members img { max-width: 19%; }
+  .section6 .wording h3 { text-align: left; }
+}
+@media screen and (max-width:700px) {
+  .hidden-when-small-screen { display: none; }
+  .section {
+    height: 480px;
+    max-width: 600px;
+  }
+  .section2 { height: 100px; }
+  .section .wording, .section .figure {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+  }
+  .section .wording { padding-top: 0px; }
+  .section1 .wording, .section1 .figure { height: 50%; }
+  .section1 .wording { top: 50%; }
+  .section2 .figure { height: 100%; width: 200%; left: -50%; text-align: left; }
+  .section2 .wording { left: 38%; width: 60%; }
+  .section2 .wording p { margin-top: 3%;}
+  .section3 .wording, .section4 .wording { height: 60%; }
+  .section3 .figure, .section4 .figure { height: 40%; top: 60%; }
+  .section5 .wording { height: 30%; }
+  .section5 .wording:nth-of-type(2) { top: 15%; }
+  .section5 .members { top: 50%; text-align: center; }
+  .section5 .members img { max-width: 30%; max-height: 25%; }
+  .section6 .wording { height: 100%; padding-left: 1%; }
+  .section6 .wording, .section6 .wording h3 { text-align: left; }
+  .section6 .figure { left: 60%; height: 100%; }
+  .wording h3 { margin-bottom: 0px; font-size: 22px; }
+}
+/* /section */
+
+
+/* footer */
+.footer-bg {
+  background-color: #454545;
+  border: 1px solid #454545;
+}
+.footer {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .block {
+  display: inline-block;
+  height: 200px;
+  min-width: 35%;
+  padding-left: 5%;
+  vertical-align: top;
+  text-align: left;
+  border: 0px solid red;
+}
+.footer h5 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: normal;
+}
+.footer input {
+  border: 0px;
+  height: 35px;
+  padding: 0px 5px;
+  margin: 0px;
+  margin-right: 5px;
+  font-size: 18px;
+}
+.footer input.email { width: 240px; }
+.footer input[type=submit] {
+  background-color: #93894c;
+  color: #fff;
+}
+.footer .links { padding-top: 20px; }
+.footer .links img { width: 35px; padding-right: 2px; }
+.footer a {
+  text-decoration: none;
+  color: #b0a273;
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.footer .copyright {
+  margin-bottom: 15px;
+  color: #bcbcbc;
+}
+@media screen and (max-width:700px) {
+  .footer { text-align: left; }
+  .footer .block { height: auto; }
+  .footer input { font-size: 14px; }
+  .footer input.email { width: 180px; }
+  .footer input[type=submit] {
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  .footer .copyright {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9px;
+  }
+}
+/* /footer */
