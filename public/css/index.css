@@ -154,7 +154,7 @@ img { border: 0px; }
   .section .wording { padding-top: 0px; }
   .section1 .wording, .section1 .figure { height: 50%; }
   .section1 .wording { top: 50%; }
-  .section2 .figure { height: 100%; width: 200%; ileft: -50%; }
+  .section2 .figure { height: 100%; width: 200%; }
   .section2 .figure { right: 55%; margin-right: -80px; text-align: right; }
   .section2 .wording { left: 45%; width: 50%; }
   .section2 .wording p { margin: 0;}
@@ -165,7 +165,7 @@ img { border: 0px; }
   .section5 .members { top: 50%; text-align: center; }
   .section5 .members img { max-width: 30%; max-height: 25%; }
   .section6 .wording { height: 100%; padding-left: 1%; }
-  .section6 .wording, .section .figure, .section6 .wording h3 { text-align: left; }
+  .section6 .wording, .section6 .figure, .section6 .wording h3 { text-align: left; }
   .section6 .figure { left: 50%; height: 100%; width: 200%; }
   .wording h3 { margin-bottom: 0px; font-size: 22px; }
 }
