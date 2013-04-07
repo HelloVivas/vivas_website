@@ -1,0 +1,96 @@
+div{
+    border-radius: 5px;
+}
+
+#header{
+    position: fixed;
+    z-index: 1;
+    background: #00BFFF;
+    width: 97.5%;
+    height: 60px; 
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+#name{
+    float: left;
+    font-size:15px;
+    font-family: Verdana;
+    color: #ffffff;
+    margin-left: 5px;
+    margin-top: 20px;  
+    font-weight: bold;
+}
+
+#email{
+    float: right;
+    margin-right: 5px;
+    margin-top: 20px; 
+    font-size: 16px;
+    font-family: Verdana;
+    color: #ffffff;
+}
+
+a:hover{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.left{
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 400px;
+    background-color: #008B8B;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.right{
+    position:relative;
+    float: right;
+    width: 87.5%;
+    height: 400px; 
+    background: #EE6A50;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.item{
+    margin-left: 10px;
+    font-family: Verdana, Sans-serif;
+    font-size: 16px;
+}  
+
+.right p{
+    margin-left: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top:-5px;
+}
+
+.item{
+     margin-left: 10px;
+    font-family:Verdana;
+    font-size: 16px;
+}
+
+li{
+    list-style-type: square;
+}
+#footer{
+    position: relative;
+    margin-bottom: 10px;
+    height: 60px;
+    background: #00B2EE;
+    clear: both;
+    text-align: center;
+}
+
+#footer p{
+    position: relative;
+    padding-top: 15px;
+    font-family: Verdana;
+    font-size: 14px;
+}
+    
